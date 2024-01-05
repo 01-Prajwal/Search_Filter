@@ -7,11 +7,7 @@ const MovieRouter = require("./Routes/Movie")
 const mongoose = require("mongoose")
 
 
-app.use(cors({
-    origin :["https://search-filter-rvb3.vercel.app/"]
-    methods :["POST","GET"],
-    credentials:true
-}))
+app.use(cors())
 app.use(express.json())
 
 const port = process.env.PORT||8080
