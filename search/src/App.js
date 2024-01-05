@@ -19,7 +19,7 @@ function App() {
     const getAllMovies = async () => {
       try {
         // const url = `${base_url}?page=${page}&sort=${sort.sort},${sort.order}&genre=${filterGenre.toString()}&search=${search}`
-        const url = `http://localhost:8080/api/movies?page=${page}&sort=${sort.sort},${sort.order
+        const url = `http://search-filter-rho.vercel.app/?page=${page}&sort=${sort.sort},${sort.order
           }&genre=${filterGenre.toString()}&search=${search}`;
         const { data } = await axios.get(url);
         setObj(data);
