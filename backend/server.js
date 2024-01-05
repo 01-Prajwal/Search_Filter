@@ -8,7 +8,7 @@ const mongoose = require("mongoose")
 
 
 app.use(cors({
-    origin :["https://search-filter-vxepdsww8-01-prajwal.vercel.app"]
+    origin :["https://search-filter-rho.vercel.app/"]
     methods :["POST","GET"],
     credentials:true
 }))
