@@ -7,7 +7,11 @@ const MovieRouter = require("./Routes/Movie")
 const mongoose = require("mongoose")
 
 
-app.use(cors())
+app.use(cors({
+    origin :["https://deploy-mern-1whq.vercel.app"],
+    methods :["POST","GET"],
+    credentials:true
+}))
 app.use(express.json())
 
 const port = process.env.PORT||8080
