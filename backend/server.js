@@ -31,7 +31,9 @@ app.use('/api',MovieRouter)
 mongoose.connect("mongodb+srv://search1:search123@cluster0.a4ydfce.mongodb.net/?retryWrites=true&w=majority")
 
 
-
+app.get('/',(req,res)=>{
+    res.json("Hello")
+})
 app.listen(port,()=>{
 
     console.log(`Listening on PORT${port}..`);
